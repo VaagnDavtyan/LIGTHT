@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+    <style>
+        body {
+            background-color: #ff7074;
+
+        }
+        .conteiner {
+            width: 500px;
+            margin: auto;
+        }
+        button {
+            padding: 10px;
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <img src="https://media0.giphy.com/media/26BkNrGhy4DKnbD9u/giphy_s.gif?cid=ecf05e47iayq67erme8nqlf3t53mk3nqowkkbcupysm0e4ms&rid=giphy_s.gif\" alt="">
+        <div class="buttons">
+            <button id="turn-on">Turn on Light</button>
+            <button id="turn-off">Turn off Light</button>
+        </div> 
+    </div>
+    <script>
+        console.log('helloscssccsc');
+        const imgElement = document.querySelector('img')
+        const turnOnButton = document.querySelector('#turn-on')
+        const turnOffButton = document.querySelector('#turn-off')
+
+        const animatadImageUrl = 'https://media0.giphy.com/media/26BkNrGhy4DKnbD9u/giphy.mp4?cid=ecf05e47iayq67erme8nqlf3t53mk3nqowkkbcupysm0e4ms&rid=giphy.mp4'
+        const stillImgUrl = 'https://media3.giphy.com/media/26BkNrGhy4DKnbD9u/giphy_s.gif?cid=ecf05e47jjz8jqwcmk15o8tiz52yrswqa8di85u5h0vyg93j&rid=giphy_s.gif'
+
+
+        turnOnButton.addEventListener('click', function () {
+            console.log('tammmm')
+            imgElement.setAttribute('src', animatadImageUrl);
+        });
+
+        turnOffButton.addEventListener('click', function () {
+            console.log('tammfffffmm')
+            imgElement.setAttribute('src', stillImgUrl);
+        });
+    </script>
+</body>
+</html>
